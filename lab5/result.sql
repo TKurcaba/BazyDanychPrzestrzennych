@@ -57,4 +57,4 @@ where name='obiekt7';
 -- zad 5
 
 select ST_Area(ST_Buffer(geom, 5)) from obiekty o
-where ST_HasArc(ST_LineToCurve(geom));
+where ST_HasArc(ST_LineToCurve(geom))=false;
